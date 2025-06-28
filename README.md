@@ -92,9 +92,3 @@ All exceptions are centralized using a global handler `MyControllerAdvice`.
 ---
 
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/banking-app.git
-   cd banking-app
-
-
