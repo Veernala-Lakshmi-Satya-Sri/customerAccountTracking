@@ -33,15 +33,18 @@ This project demonstrates clean architecture, exception handling, validation, an
 ---
 
 ## 📦 Project Structure
+
+```
 com.bed
 │
-├── controller # REST controllers (BankController)
-├── service # Business logic (CustomerService, AccountService)
-├── model # Entity classes (Customer, Account)
-├── repositary # JPA repositories (CustomerRepo, AccountRepo)
-├── Exceptions # Custom exception classes
-│
-└── dto # DTOs for input and views (CustomerDetails, Amount, etc.)
+├── controller          # REST controllers
+├── service             # Business logic
+├── model               # Entity classes
+├── repositary          # JPA repositories
+├── Exceptions          # Custom exception classes
+├── dto                 # DTOs (e.g., CustomerDetails, Amount)
+└── advice              # Global exception handler (MyControllerAdvice)
+```
 
 
 ---
@@ -88,7 +91,6 @@ All exceptions are centralized using a global handler `MyControllerAdvice`.
 
 ---
 
-## 🔧 How to Run
 
 1. Clone the repo:
    ```bash
